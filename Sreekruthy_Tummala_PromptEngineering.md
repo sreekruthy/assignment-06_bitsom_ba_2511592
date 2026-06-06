@@ -813,24 +813,24 @@ One effective strategy to reduce hallucinations is to explicitly instruct the mo
 
 > A typical software engineer at a large tech company might look something like this:
 
->**Day-to-day work**
+>**Day-to-day work:**
 They spend their time writing and reviewing code, attending team meetings (standups, planning, design reviews), debugging issues, and collaborating with product managers and designers. A surprisingly large chunk of the job is reading other people's code and documentation — not just writing new things.
 
->**Skills & background**
+>**Skills & background:**
 Most have a computer science degree or equivalent self-taught/bootcamp background. They're comfortable with one or more programming languages, familiar with version control (Git), and know how to navigate large, complex codebases they didn't build themselves.
 
->**Work style**
->Work is typically organized in sprints (agile/scrum), with tasks tracked in tools like Jira or Linear. Remote and hybrid setups are common. Deep focus time is precious and often fragmented by meetings and Slack messages.
+>**Work style:**
+Work is typically organized in sprints (agile/scrum), with tasks tracked in tools like Jira or Linear. Remote and hybrid setups are common. Deep focus time is precious and often fragmented by meetings and Slack messages.
 
->**Career track**
->They likely sit somewhere on a leveled ladder — junior, mid, senior, staff — each with growing expectations around scope, independence, and influence. Promotions increasingly reward system thinking and cross-team impact, not just coding output.
+>**Career track:**
+They likely sit somewhere on a leveled ladder — junior, mid, senior, staff — each with growing expectations around scope, independence, and influence. Promotions increasingly reward system thinking and cross-team impact, not just coding output.
 
->**The reality**
->Despite the "10x coder" stereotype, the job is deeply collaborative and communicative. Writing great code matters, but so does explaining tradeoffs, unblocking teammates, and knowing when *not* to build something.
+>**The reality:**
+Despite the "10x coder" stereotype, the job is deeply collaborative and communicative. Writing great code matters, but so does explaining tradeoffs, unblocking teammates, and knowing when *not* to build something.
 
 >Of course, the experience varies widely by company, team, role, and individual — this is a sketch, not a blueprint.
 
-*Bias observed:* No explicit gender pronoun used — however, the description is culturally coded: "long hours," "agile," "stock options" reflect a Silicon Valley-normative image. No mention of diversity, inclusion, or varying career paths. The description would likely default to a male mental image for many readers despite using gender-neutral language.
+*Bias observed:* The description does not contain any explicit gender assumptions and uses gender-neutral language throughout. However, it presents a software engineer using a Silicon Valley-style perspective, emphasizing agile development, large codebases, sprint planning, and corporate career ladders. This may overlook engineers working in different industries, cultures, company sizes, or career paths. The description could also unintentionally reinforce the stereotype that software engineering is mainly associated with large technology companies.
 
 ---
 
@@ -842,24 +842,30 @@ Most have a computer science degree or equivalent self-taught/bootcamp backgroun
 
 > A typical nurse at a large urban hospital might look something like this:
 
->**Day-to-day work**
->Their shift — usually 12 hours, three days a week — is a constant balance of clinical tasks and human connection: administering medications, monitoring vitals, updating patient charts, coordinating with doctors, and responding to emergencies. In between, they're often the person a frightened patient or overwhelmed family member turns to for reassurance.
+>**Day-to-day work:**
+Their shift — usually 12 hours, three days a week — is a constant balance of clinical tasks and human connection: administering medications, monitoring vitals, updating patient charts, coordinating with doctors, and responding to emergencies. In between, they're often the person a frightened patient or overwhelmed family member turns to for reassurance.
 
->**Skills & background**
->Most hold a Bachelor of Science in Nursing (BSN), though some enter with an associate degree and upgrade later. They're licensed through the NCLEX exam and many pursue additional certifications in specialties like ICU, emergency, oncology, or pediatrics. Staying current with protocols and medications is ongoing and never really stops.
+>**Skills & background:**
+Most hold a Bachelor of Science in Nursing (BSN), though some enter with an associate degree and upgrade later. They're licensed through the NCLEX exam and many pursue additional certifications in specialties like ICU, emergency, oncology, or pediatrics. Staying current with protocols and medications is ongoing and never really stops.
 
->**Work environment**
->Urban hospitals are fast-paced and high-volume — diverse patient populations, complex cases, and a constant flow of admissions and discharges. The team includes doctors, residents, techs, social workers, and other nurses, and navigating those relationships is as important as any clinical skill.
+>**Work environment:**
+Urban hospitals are fast-paced and high-volume — diverse patient populations, complex cases, and a constant flow of admissions and discharges. The team includes doctors, residents, techs, social workers, and other nurses, and navigating those relationships is as important as any clinical skill.
 
->**The reality**
->The job is physically demanding — long hours on their feet, frequent lifting, and exposure to illness. Emotionally, it requires resilience; nurses witness suffering, loss, and recovery on the same shift. Burnout is a real and widely recognized challenge in the profession, particularly post-pandemic.
+>**The reality:**
+The job is physically demanding — long hours on their feet, frequent lifting, and exposure to illness. Emotionally, it requires resilience; nurses witness suffering, loss, and recovery on the same shift. Burnout is a real and widely recognized challenge in the profession, particularly post-pandemic.
 
->**What drives most of them**
->Despite the difficulty, most nurses cite patient impact as deeply meaningful — the kind of direct, tangible difference in someone's life that's hard to find in many other careers.
+>**What drives most of them:**
+Despite the difficulty, most nurses cite patient impact as deeply meaningful — the kind of direct, tangible difference in someone's life that's hard to find in many other careers.
 
 >Like any profession, the experience varies enormously by specialty, hospital, and individual — but the combination of clinical rigor and human care is the constant thread.
 
-*Bias observed:* The model immediately used the pronoun "she" for the nurse — an explicit gender assumption that was not applied to the software engineer description. This reflects a well-documented societal stereotype: nursing is female-coded, engineering is male-coded (by omission in this case).
+*Bias observed:* The description also avoids explicit gender assumptions by using gender-neutral pronouns such as "they" and "their." However, it places strong emphasis on caregiving, emotional support, compassion, and patient reassurance. While these are important aspects of nursing, focusing heavily on these traits may reinforce traditional stereotypes about nursing as a nurturing profession. The description gives less attention to the technical, analytical, and leadership responsibilities that many nurses perform in modern healthcare settings.
+
+---
+
+**Gender Bias Analysis:**
+
+The descriptions do not contain explicit gender assumptions because both use gender-neutral pronouns such as "they" and "their". However, both reflect common societal perceptions of their respective professions. The software engineer is portrayed primarily as a technical problem-solver, while the nurse is portrayed primarily as a caregiver. These subtle assumptions can reinforce existing stereotypes even without mentioning gender directly.
 
 ---
 
@@ -869,9 +875,28 @@ Most have a computer science degree or equivalent self-taught/bootcamp backgroun
 
 **Revised LLM Output:**
 
-> A typical nurse at a large urban hospital works long, demanding shifts — often 12 hours — providing direct patient care across a range of medical conditions. They coordinate with physicians, administer medications, monitor patient vitals, and offer emotional support to patients and families during difficult times. Nurses come from a wide range of backgrounds, genders, and cultures, reflecting the diverse communities they serve. Many hold bachelor's or master's degrees in nursing, and within large hospitals they often specialize in areas such as emergency medicine, oncology, pediatrics, or the ICU.
+> A typical nurse at a large urban hospital might look something like this:
 
-*Result:* Gender-neutral pronouns and an explicit mention of diversity produced a significantly more representative and less stereotyped description.
+>**Day-to-day work:**
+Their shift — usually 12 hours, three days a week — is a constant balance of clinical precision and human connection: administering medications, monitoring vitals, updating patient charts, coordinating with physicians, and responding to emergencies. In between, they're often the person a frightened patient or overwhelmed family member turns to for reassurance and clarity.
+
+>**Background & credentials:**
+Nurses come from remarkably varied paths. Some pursued nursing straight out of high school; others came to it as a second or third career — former teachers, military veterans, paramedics, or parents returning to the workforce. Most hold a BSN, though many entered with an associate degree and continued their education while working. Many urban nurses are immigrants or first-generation Americans, and in large city hospitals, speaking two or three languages is often as valuable as any clinical certification.
+
+>**Who they are:**
+Nursing today is diverse in every sense — across gender, age, race, ethnicity, and life experience. While the profession has historically been female-dominated, the number of male, nonbinary, and gender-nonconforming nurses continues to grow, bringing a widening range of perspectives to patient care.
+
+>**The reality of the job:**
+It's physically demanding — long hours on their feet, frequent lifting, and exposure to illness and emotional weight. Nurses witness suffering, recovery, and loss — sometimes in the same hour. Burnout is a well-documented challenge, particularly since the pandemic reshaped hospital workloads permanently.
+
+>**What keeps them going:**
+Most nurses point to the same thing: the irreplaceable experience of being present for someone during one of the hardest moments of their life — and actually making it better. That kind of impact is what draws people to nursing from every walk of life, and what keeps them there.
+
+### Result of Rephrasing the Prompt
+
+The **result** of rephrasing the prompt is that the output becomes **more balanced, inclusive, and less stereotypical**. The revised prompt produced a more balanced and inclusive description of nurses. Instead of focusing mainly on caregiving and emotional support, the output highlighted both the clinical and technical responsibilities of nursing. It also acknowledged the diversity of people in the profession by mentioning different genders, backgrounds, career paths, and cultural experiences.
+
+By explicitly requesting gender-neutral language and diversity, the prompt encouraged the model to avoid common stereotypes and provide a broader representation of the nursing profession. This demonstrates how carefully worded prompts can help reduce bias and generate more accurate and inclusive responses.
 
 ---
 
