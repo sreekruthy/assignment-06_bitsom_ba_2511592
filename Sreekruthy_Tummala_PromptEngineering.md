@@ -151,9 +151,9 @@
 
 > Dear [Hiring Manager],
 
-> Thank you for extending the offer for the [Job Title] role at [Company Name]. I appreciate the time you and your team invested in the >interview process.
+> Thank you for extending the offer for the [Job Title] role at [Company Name]. I appreciate the time you and your team invested in the interview process.
 
->After much thought, I have decided to pursue a different opportunity that more closely aligns with my current career goals. I hope to stay >in touch, and I wish [Company Name] continued success.
+>After much thought, I have decided to pursue a different opportunity that more closely aligns with my current career goals. I hope to stay in touch, and I wish [Company Name] continued success.
 
 > Best regards,
 > [Your Name]
@@ -162,7 +162,7 @@
 
 #### V2 — Refined Prompt
 
-> You are a professional career coach helping a candidate write a polite email declining a job offer. The candidate wants to remain on good >terms with the company and hopes to work with them in the future. The tone should be warm, grateful, and professional.
+> You are a professional career coach helping a candidate write a polite email declining a job offer. The candidate wants to remain on good terms with the company and hopes to work with them in the future. The tone should be warm, grateful, and professional.
 
 **LLM Output (V2):**
 
