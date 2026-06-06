@@ -1,8 +1,8 @@
 # Prompt Engineering Portfolio
 
 **Name:** Sreekruthy Tummala
-**Date:** 05-06-2026
-**LLM Used:** Claude Sonnet 4 (Anthropic) — claude-sonnet-4-20250514
+**Date:** 06-06-2026
+**LLM Used:** Claude Sonnet 4 (Anthropic)
 
 ---
 
@@ -892,7 +892,7 @@ It's physically demanding — long hours on their feet, frequent lifting, and ex
 >**What keeps them going:**
 Most nurses point to the same thing: the irreplaceable experience of being present for someone during one of the hardest moments of their life — and actually making it better. That kind of impact is what draws people to nursing from every walk of life, and what keeps them there.
 
-### Result of Rephrasing the Prompt
+##### Result of Rephrasing the Prompt
 
 The **result** of rephrasing the prompt is that the output becomes **more balanced, inclusive, and less stereotypical**. The revised prompt produced a more balanced and inclusive description of nurses. Instead of focusing mainly on caregiving and emotional support, the output highlighted both the clinical and technical responsibilities of nursing. It also acknowledged the diversity of people in the profession by mentioning different genders, backgrounds, career paths, and cultural experiences.
 
@@ -904,16 +904,18 @@ By explicitly requesting gender-neutral language and diversity, the prompt encou
 
 **Three Limitations Encountered:**
 
-1. **Factual Accuracy (Hallucination Risk):** Even well-calibrated models can confidently generate plausible-sounding but entirely fabricated information, particularly for obscure topics, recent events outside their training data, or highly specific claims like named studies or statistics. This means LLM outputs should never be used as primary sources without independent verification.
+1. **Factual accuracy (hallucination risk):** Even good models can confidently generate plausible-sounding but entirely fabricated information, particularly for obscure topics, recent events outside their training data, or highly specific claims like named studies or statistics. During the hallucination tests, the model had to be explicitly guided to avoid making up information. This shows that users cannot always assume the generated content is factually correct and LLM outputs should never be used as primary sources without independent verification.
 
-2. **Implicit Bias in Outputs:** As demonstrated in the gender bias test, LLMs encode the biases present in their training data — often defaulting to gender, cultural, or age stereotypes when not explicitly instructed to avoid them. This is especially concerning in hiring tools, educational platforms, or any system that describes or evaluates people.
+2. **Implicit bias in outputs:** LLMs may reflect biases present in their training data. In the bias analysis task, the descriptions of software engineers and nurses reflected common societal stereotypes about those professions. Even when explicit bias is absent, subtle assumptions can still influence the output. This is especially concerning in hiring tools, educational platforms, or any system that describes or evaluates people.
 
-3. **Reasoning Inconsistency:** While chain-of-thought prompting significantly improves multi-step reasoning, LLMs can still make subtle arithmetic or logical errors — particularly when problems involve edge cases, rounding decisions, or multiple interacting variables. They are not reliable calculators or formal logic engines.
+3. **Reasoning inconsistency:** Although LLMs can perform logical reasoning, they may make mistakes in multi-step calculations or when dealing with ambiguous data. In the chain-of-thought exercise, different rounding choices led to different answers, showing that the model's reasoning is not always perfectly reliable. They are not reliable calculators or formal logic engines.
+
+---
 
 **Three Recommendations for Responsible Use:**
 
-1. **Always verify factual outputs against authoritative sources** — especially in domains like medicine, law, finance, or scientific research. Treat LLM outputs as a first draft or research starting point, not a citable endpoint. If an LLM provides a statistic, study citation, or legal clause, search for the original source before acting on it.
+1. **Always verify factual outputs against authoritative sources** — Outputs should be verified whenever they are used for academic assignments, research, healthcare, law, finance, or professional work. Cross-checking information with reliable sources helps prevent the spread of misinformation and reduces the impact of hallucinations. Treat LLM outputs as a first draft or research starting point, not a citable endpoint. If an LLM provides a statistic, study citation, or legal clause, search for the original source before acting on it.
 
-2. **LLMs are not suitable for high-stakes autonomous decision-making** — such as diagnosing medical conditions, generating legal contracts without attorney review, or making final hiring decisions. They are tools that augment human judgment, not replace it, and must always be supervised by a qualified human in consequential contexts.
+2. **LLMs are not suitable for high-stakes autonomous decision-making** — LLMs are not suitable for tasks that require guaranteed accuracy, expert judgment, or accountability. They should not be relied upon as the sole source for medical diagnoses, legal advice, financial planning, making final hiring decisions or other critical decisions where mistakes can have serious consequences. They are tools that augment human judgment, not replace it, and must always be supervised by a qualified human in consequential contexts.
 
-3. **Use LLMs ethically in academic and professional settings** by being transparent about AI involvement, crafting prompts that actively counteract bias (as shown in the gender bias section), and understanding that the quality of output is directly tied to the quality of your prompts — developing prompt engineering literacy is itself a responsible practice that reduces misuse.
+3. **Use LLMs ethically in academic and professional settings** - LLMs should be used as tools for learning, brainstorming, drafting, and improving productivity rather than as replacements for original thinking. We should understand the generated content, verify important information, and follow academic integrity guidelines instead of submitting AI-generated work as entirely our own. We should be transparent about AI involvement, crafting prompts that counteract bias (seen in the gender bias section), and understanding that the quality of output is directly tied to the quality of the prompts, developing prompt engineering literacy is a responsible practice that reduces misuse.
