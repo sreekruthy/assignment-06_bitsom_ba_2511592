@@ -404,8 +404,6 @@ Adding a specific role helped the LLM adopt the appropriate tone, expertise, and
 
 #### Low Temperature (Added "Be precise and factual. Use clear, consistent language.")
 
----
-
 **Temperature:**
 low (0 to 0.4)
 
@@ -428,8 +426,6 @@ low (0 to 0.4)
 
 #### Medium Temperature (No modifier - baseline prompt)
 
----
-
 **Temperature:**
 medium (0.5 to 0.7)
 
@@ -443,8 +439,6 @@ medium (0.5 to 0.7)
 ---
 
 #### High Temperature (Added "Be creative and explore diverse, imaginative ideas.")
-
----
 
 **Temperature:**
 high (0.8 to 1.0)
