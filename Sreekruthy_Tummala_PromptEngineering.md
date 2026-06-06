@@ -1,7 +1,9 @@
 # Prompt Engineering Portfolio
 
 **Name:** Sreekruthy Tummala
+
 **Date:** 06-06-2026
+
 **LLM Used:** Claude Sonnet 4 (Anthropic)
 
 ---
