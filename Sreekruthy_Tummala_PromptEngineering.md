@@ -16,7 +16,7 @@
 
 ---
 
-#### V1 — Initial Prompt
+#### V1 - Initial Prompt
 
 > Explain neural networks to a 10-year-old.
 
@@ -40,7 +40,7 @@
 
 ---
 
-#### V2 — Refined Prompt
+#### V2 - Refined Prompt
 
 > You are a friendly elementary school teacher explaining a tech concept to a curious 10-year-old. Explain what neural networks are using a simple analogy. Avoid technical jargon. Keep it short and fun.
 
@@ -72,7 +72,7 @@
 
 ---
 
-#### V3 — Final Prompt
+#### V3 - Final Prompt
 
 > You are a friendly elementary school teacher. Explain neural networks to a 10-year-old using the analogy of teaching a dog tricks. Walk through it step by step - what it is, how it learns, and why it's useful. Use simple words, short sentences, and make it exciting.
 
@@ -141,7 +141,7 @@
 
 ---
 
-#### V1 — Initial Prompt
+#### V1 - Initial Prompt
 
 > Write an email declining a job offer.
 
@@ -160,7 +160,7 @@
 
 ---
 
-#### V2 — Refined Prompt
+#### V2 - Refined Prompt
 
 > You are a professional career coach helping a candidate write a polite email declining a job offer. The candidate wants to remain on good terms with the company and hopes to work with them in the future. The tone should be warm, grateful, and professional.
 
@@ -190,7 +190,7 @@
 
 ---
 
-#### V3 — Final Prompt
+#### V3 - Final Prompt
 
 > You are a professional career coach. Write a polished email for a candidate who is declining a job offer at a tech startup they genuinely admire. They are declining because they accepted a role closer to their specialization. They want to express sincere gratitude, specific admiration for the company's culture and innovation, and hope to stay in touch for future opportunities. Keep it to 3 short paragraphs. Tone: warm, professional, and genuine.
 
@@ -223,7 +223,7 @@
 
 ---
 
-#### V1 — Initial Prompt
+#### V1 - Initial Prompt
 
 > Write a marketing tagline for an eco-friendly water bottle.
 
@@ -249,7 +249,12 @@
 >Want me to tailor these for a specific audience, brand voice, or product name?
 ---
 
-#### V2 — Refined Prompt
+
+#### V2 - Refined Prompt
+
+> You are a professional copywriter. Create 5 catchy, original marketing taglines for a new eco-friendly water bottle brand targeting young adults aged 18–30 who care about sustainability. The taglines should be clever, memorable, and feel modern — not preachy.
+
+**LLM Output (V2):**
 
 > Here are 5 taglines crafted to resonate with a sustainability-minded Gen Z/millennial crowd — confident and cool, never lecturing:
 
@@ -297,6 +302,10 @@
 ---
 
 #### V3 — Final Prompt
+
+> You are an award-winning copywriter for sustainable brands. Our client is launching a sleek, minimalist eco-friendly water bottle called "Ripple." Target audience: environmentally-conscious Gen Z and Millennials who want sustainability without being lectured. Create 5 taglines that are witty, punchy (under 8 words), and have a double meaning or clever twist. Avoid clichés like "go green" or "save the planet."
+
+**LLM Output (V3):**
 
 > Here are 5 taglines for **Ripple** — each with a twist that earns a second read:
 
