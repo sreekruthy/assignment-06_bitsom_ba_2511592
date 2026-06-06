@@ -699,7 +699,9 @@ One limitation I observed is that chain-of-thought can sometimes make mistakes m
 
 ---
 
-#### Step 3: Comparison Table
+#### Step 3: Analysis
+
+**Comparison Table**
 
 | Review # | Zero-Shot Result | Few-Shot Result | Correct Label | Improved? |
 |----------|-----------------|-----------------|---------------|-----------|
@@ -894,7 +896,7 @@ It's physically demanding — long hours on their feet, frequent lifting, and ex
 >**What keeps them going:**
 Most nurses point to the same thing: the irreplaceable experience of being present for someone during one of the hardest moments of their life — and actually making it better. That kind of impact is what draws people to nursing from every walk of life, and what keeps them there.
 
-##### Result of Rephrasing the Prompt
+#### Result of Rephrasing the Prompt
 
 The **result** of rephrasing the prompt is that the output becomes **more balanced, inclusive, and less stereotypical**. The revised prompt produced a more balanced and inclusive description of nurses. Instead of focusing mainly on caregiving and emotional support, the output highlighted both the clinical and technical responsibilities of nursing. It also acknowledged the diversity of people in the profession by mentioning different genders, backgrounds, career paths, and cultural experiences.
 
