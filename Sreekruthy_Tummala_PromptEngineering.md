@@ -525,10 +525,21 @@ For this task, the medium temperature worked best. It provided a good balance be
 
 **LLM Output:**
 
-> After hiring, the company will have 172 employees.
+> Here's the breakdown:
 
-*(Note: This answer is incorrect — the correct answer is 174. The model jumped to a conclusion without showing its reasoning.)*
+>**Current staff**
+>- Engineering: 150 × 60% = **90**
+>- Sales: 150 × 25% = **37.5 → 38** *(rounded)*
+>- Operations: 150 − 90 − 38 = **22**
 
+>**After hiring**
+>- Engineering: 90 × 1.20 = **108** (+18)
+>- Sales: 38 × 1.10 = **41.8 → 42** (+4)
+>- Operations: **22** (unchanged)
+
+>**Total: 108 + 42 + 22 = 172 employees**
+
+> ⚠️ Note: 25% of 150 = 37.5, which isn't a whole number. Rounding to 38 gives a total of **172**. If your data uses 37 instead, the final count would be **171**. Worth confirming the exact current headcount per department.
 ---
 
 #### With Chain-of-Thought
@@ -538,34 +549,62 @@ For this task, the medium temperature worked best. It provided a good balance be
 
 **LLM Output:**
 
-> Let's work through this step by step.
->
-> **Step 1: Find the number in each department.**
-> - Engineering: 60% of 150 = 0.60 × 150 = **90 employees**
-> - Sales: 25% of 150 = 0.25 × 150 = **37.5 → 38 employees** *(rounding to nearest whole person)*
-> - Operations: 150 − 90 − 38 = **22 employees**
->
-> **Step 2: Calculate new hires.**
-> - New engineers: 20% of 90 = 0.20 × 90 = **18 new engineers**
-> - New salespeople: 10% of 38 = 0.10 × 38 = **3.8 → 4 new salespeople** *(rounded)*
->
-> **Step 3: Calculate total employees after hiring.**
-> - Engineering: 90 + 18 = 108
-> - Sales: 38 + 4 = 42
-> - Operations: 22 (unchanged)
-> - **Total: 108 + 42 + 22 = 172 employees**
->
-> After hiring, the company will have **172 total employees**.
+> Sure! Let's walk through it step by step.
 
+---
+
+>**Step 1 — Find current department sizes**
+
+>- Engineering: 150 × 0.60 = **90 employees**
+>- Sales: 150 × 0.25 = **37.5 employees** ⚠️ *(not a whole number — see note at end)*
+>- Operations: 150 − 90 − 37.5 = **22.5 employees** ⚠️
+
+---
+
+>**Step 2 — Calculate new hires**
+
+>- New engineers: 90 × 0.20 = **18 new hires**
+>- New salespeople: 37.5 × 0.10 = **3.75 → 4 new hires** *(rounded)*
+>- Operations: **no new hires**
+
+---
+
+>**Step 3 — Find new department totals**
+
+>- Engineering: 90 + 18 = **108**
+>- Sales: 37.5 + 4 = **41.5 → 42** *(rounded)*
+>- Operations: **22.5 → 23** *(rounded)*
+
+---
+
+>**Step 4 — Add everything up**
+
+>| Department | Before | After |
+>|---|---|---|
+>| Engineering | 90 | 108 |
+>| Sales | 38 | 42 |
+>| Operations | 22 | 23 |
+>| **Total** | **150** | **173** |
+
+---
+
+>**✅ Final Answer: 173 employees**
+
+---
+
+> ⚠️ **Rounding note:** Since 25% of 150 = 37.5, the problem has a fractional employee built in. Real-world, you'd want to confirm exact headcounts per department. Depending on how you round at each step, the answer could reasonably land at **172 or 173.**
 ---
 
 #### Comparison and Analysis
 
-The outputs differed dramatically in quality and transparency. Without chain-of-thought, the model returned a bare number with no justification, making it impossible to verify correctness or catch rounding decisions. With chain-of-thought, the model produced a fully auditable solution — surfacing rounding choices and intermediate values that a reader can check independently.
+One limitation observed is that chain-of-thought doesn't eliminate errors — it just makes them visible. 
 
-Chain-of-thought helps with complex reasoning because it forces the model to decompose a multi-step problem serially, reducing the chance that early calculation errors propagate silently to the final answer. By externalizing each step, the model also "commits" to intermediate values, which constrains subsequent steps and improves logical consistency.
 
-One limitation observed is that chain-of-thought doesn't eliminate errors — it just makes them visible. In this case, both the with and without versions agree on 172, but the rounding of 37.5 salespeople is a judgment call the model makes silently in V1 and explicitly in V2. If a user had a different rounding convention, the chain-of-thought output at least provides the transparency to intervene.
+The outputs differed mainly in the level of detail. The response without chain-of-thought gave a quick solution with minimal explanation,making it difficult to verify correctness. While the chain-of-thought response showed each calculation step and explained how the final answer was reached including the rounding choices and intermediate values that a reader can check independently.
+
+Chain-of-thought helps with complex reasoning because it breaks a problem into smaller steps, making the logic easier to follow and reducing the chance of missing important calculations. It is especially useful for mathematical, logical, and multi-step problems. By externalizing each step, the model also "commits" to intermediate values, which constrains subsequent steps and improves logical consistency.
+
+One limitation I observed is that chain-of-thought can sometimes make mistakes more visible and may introduce confusion when dealing with ambiguous information, such as the fractional employee counts in this example. In this case, both the with and without versions agree consider different rounding of 37.5 though a disclaimer is given. It is a judgment call the model makes silently in V1 and explicitly in V2. If a user had a different rounding convention, the chain-of-thought output at least provides the transparency to intervene.It also produces longer responses, which may not be necessary for simple questions.
 
 ---
 
@@ -595,11 +634,15 @@ One limitation observed is that chain-of-thought doesn't eliminate errors — it
 
 **LLM Output (Zero-Shot):**
 
-> Review 1: Negative
-> Review 2: Neutral
-> Review 3: Positive
-> Review 4: Neutral
-> Review 5: Negative
+>| # | Review | Sentiment |
+>|---|---|---|
+>| 1 | "The product arrived damaged and customer service was unhelpful." | 🔴 Negative |
+>| 2 | "Works as expected, nothing special but does the job." | 🟡 Neutral |
+>| 3 | "Absolutely love this! Best purchase I've made all year!" | 🟢 Positive |
+>| 4 | "The quality is okay but slightly overpriced for what you get." | 🟡 Neutral |
+>| 5 | "Terrible experience, would not recommend to anyone." | 🔴 Negative |
+
+>**Summary:** 1 Positive · 2 Neutral · 2 Negative
 
 ---
 
@@ -635,11 +678,25 @@ One limitation observed is that chain-of-thought doesn't eliminate errors — it
 
 **LLM Output (Few-Shot):**
 
-> Review 1: Negative
-> Review 2: Neutral
-> Review 3: Positive
-> Review 4: Neutral
-> Review 5: Negative
+>| # | Review | Sentiment |
+>|---|---|---|
+>| 1 | "The product arrived damaged and customer service was unhelpful." | 🔴 Negative |
+>| 2 | "Works as expected, nothing special but does the job." | 🟡 Neutral |
+>| 3 | "Absolutely love this! Best purchase I've made all year!" | 🟢 Positive |
+>| 4 | "The quality is okay but slightly overpriced for what you get." | 🟡 Neutral |
+>| 5 | "Terrible experience, would not recommend to anyone." | 🔴 Negative |
+
+>**Summary:** 1 Positive · 2 Neutral · 2 Negative
+
+---
+
+>**Pattern notes from the few-shot examples applied:**
+
+>- **Review 1** mirrors "Completely broke after one week" — specific product failure + poor support = clear Negative
+>- **Review 2** closely matches "It's fine, does what it says on the box" — the defining Neutral pattern
+>- **Review 3** mirrors "This product exceeded my expectations!" — superlative enthusiasm = Positive
+>- **Review 4** has mixed signals (okay quality, but overpriced) — aligns with "Disappointing quality for the price" leaning Negative, but the hedged tone ("okay," "slightly") keeps it Neutral
+>- **Review 5** mirrors the strongest Negative signals — absolute language ("terrible," "would not recommend to anyone")
 
 ---
 
@@ -653,9 +710,11 @@ One limitation observed is that chain-of-thought doesn't eliminate errors — it
 | 4 | Neutral | Neutral | Neutral | No change (both correct) |
 | 5 | Negative | Negative | Negative | No change (both correct) |
 
-**Note on results:** In this straightforward classification task, both zero-shot and few-shot achieved perfect accuracy. The real benefit of few-shot prompting becomes evident with more ambiguous or domain-specific cases — for instance, sarcastic reviews ("Oh great, another product that broke immediately — totally worth it") or industry-specific jargon where the model's default sentiment associations may be unreliable. The examples in few-shot also lock the model into a strict output format (one-word label only), which is critically useful in production pipelines where consistent structure is required.
+**Note on results:** In this straightforward classification task, both zero-shot and few-shot produced the same classifications, so there was no improvement in the final results. The real benefit of few-shot prompting becomes evident with more ambiguous or domain-specific cases, for instance, sarcastic reviews ("Oh great, another product that broke immediately - totally worth it") or industry-specific jargon where the model's default sentiment associations may be unreliable. The examples in few-shot also lock the model into a strict output format (one-word label only), which is critically useful in production pipelines where consistent structure is required. The examples helped explain the reasoning behind each classification and made the model's decisions more consistent.
 
-Few-shot prompting is most useful when the task involves a non-obvious classification schema, a domain the model lacks strong priors for, or when you need to enforce a specific and consistent output format that the model wouldn't produce reliably from instruction alone.
+**When few-shot prompting is most useful?**
+
+Few-shot prompting is most useful when the task is complex, ambiguous, or requires a specific format or style. By providing examples, the model can better understand the expected output and produce more accurate and consistent results. It is especially helpful for tasks such as sentiment analysis, text classification, data extraction, and content generation where the desired output style may not be obvious from the prompt alone.
 
 ---
 
