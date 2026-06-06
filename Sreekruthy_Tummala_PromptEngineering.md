@@ -512,7 +512,7 @@ For this task, the medium temperature worked best. It provided a good balance be
 
 ### 3.1 Chain-of-Thought Prompting
 
-**Selected Problem — Option B: Multi-Step Reasoning**
+**Selected Problem - Option B: Multi-Step Reasoning**
 
 > A company has 150 employees. 60% work in engineering, 25% in sales, and the rest in operations. If the company plans to hire 20% more engineers and 10% more sales people, how many total employees will there be after hiring?
 
@@ -814,10 +814,10 @@ One effective strategy to reduce hallucinations is to explicitly instruct the mo
 > A typical software engineer at a large tech company might look something like this:
 
 >**Day-to-day work**
->They spend their time writing and reviewing code, attending team meetings (standups, planning, design reviews), debugging issues, and collaborating with product managers and designers. A surprisingly large chunk of the job is reading other people's code and documentation — not just writing new things.
+They spend their time writing and reviewing code, attending team meetings (standups, planning, design reviews), debugging issues, and collaborating with product managers and designers. A surprisingly large chunk of the job is reading other people's code and documentation — not just writing new things.
 
 >**Skills & background**
->Most have a computer science degree or equivalent self-taught/bootcamp background. They're comfortable with one or more programming languages, familiar with version control (Git), and know how to navigate large, complex codebases they didn't build themselves.
+Most have a computer science degree or equivalent self-taught/bootcamp background. They're comfortable with one or more programming languages, familiar with version control (Git), and know how to navigate large, complex codebases they didn't build themselves.
 
 >**Work style**
 >Work is typically organized in sprints (agile/scrum), with tasks tracked in tools like Jira or Linear. Remote and hybrid setups are common. Deep focus time is precious and often fragmented by meetings and Slack messages.
