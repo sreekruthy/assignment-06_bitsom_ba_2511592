@@ -30,11 +30,11 @@
 
 > 1. **Lots of tiny pieces working together.** Just like your brain has neurons, a neural network has lots of little math pieces that pass information to each other.
 
-> 2. **It learns from examples.** Say you want to teach it to recognize cats. You show it thousands of cat photos. At first it gets it >wrong ("That's a dog? No wait..."), but every time it makes a mistake, it adjusts — just like you learn not to touch a hot stove after the >first time.
+> 2. **It learns from examples.** Say you want to teach it to recognize cats. You show it thousands of cat photos. At first it gets it wrong ("That's a dog? No wait..."), but every time it makes a mistake, it adjusts — just like you learn not to touch a hot stove after the first time.
 
->3. **It gets better with practice.** The more examples it sees, the better it gets, until it can look at a brand new photo it's never seen >and say, "Yep, that's a cat!" 🐱
+>3. **It gets better with practice.** The more examples it sees, the better it gets, until it can look at a brand new photo it's never seen and say, "Yep, that's a cat!" 🐱
 
->**A fun way to picture it:** Imagine a giant game of telephone, but with math instead of words — and the network keeps playing until it >gets the message perfectly right every time.
+>**A fun way to picture it:** Imagine a giant game of telephone, but with math instead of words — and the network keeps playing until it gets the message perfectly right every time.
 
 >That's basically what powers things like voice assistants, photo tagging, and even the spell-checker that fixes your typos!
 
@@ -52,17 +52,17 @@
 
 >You know how you learned to recognize your friends' faces? 🤔
 
->At first, when you were a baby, you had to **practice a lot** — seeing the same face over and over — until your brain just *knew* it. You >didn't even have to think about it anymore!
+>At first, when you were a baby, you had to **practice a lot** — seeing the same face over and over — until your brain just *knew* it. You didn't even have to think about it anymore!
 
 >A neural network is like giving a computer a **brain that can practice too.**
 
 >Here's the fun part — imagine a **bucket brigade** 🪣🪣🪣:
 
-> A line of kids passing buckets of water. The first kid picks up the bucket, passes it along, and by the time it reaches the last kid, the >fire is out!
+> A line of kids passing buckets of water. The first kid picks up the bucket, passes it along, and by the time it reaches the last kid, the fire is out!
 
->A neural network works the same way — information gets **passed along** through layers of tiny helpers, each one doing a small job, until >the computer reaches an answer at the end.
+>A neural network works the same way — information gets **passed along** through layers of tiny helpers, each one doing a small job, until the computer reaches an answer at the end.
 
->And just like how you get **better at catching a ball the more you practice**, the network gets smarter the more examples it sees. Make a >mistake? No problem — just adjust and try again! 💪
+>And just like how you get **better at catching a ball the more you practice**, the network gets smarter the more examples it sees. Make a mistake? No problem — just adjust and try again! 💪
 
 >**So in short:** A neural network is a computer that learns from practice, just like YOU do! 🌟
 
@@ -117,7 +117,7 @@
 
 >*"Has pointy ears... unless it doesn't. Has fur... but so does a dog..."*
 
->Too hard! But show a neural network **a million cat photos?** It figures it out on its own. Like magic — but it's really just **a LOT of >practice.**
+>Too hard! But show a neural network **a million cat photos?** It figures it out on its own. Like magic — but it's really just **a LOT of practice.**
 
 ---
 
