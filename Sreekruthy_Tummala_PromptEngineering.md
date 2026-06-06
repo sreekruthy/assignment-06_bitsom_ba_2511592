@@ -301,7 +301,7 @@
 
 ---
 
-#### V3 — Final Prompt
+#### V3 - Final Prompt
 
 > You are an award-winning copywriter for sustainable brands. Our client is launching a sleek, minimalist eco-friendly water bottle called "Ripple." Target audience: environmentally-conscious Gen Z and Millennials who want sustainability without being lectured. Create 5 taglines that are witty, punchy (under 8 words), and have a double meaning or clever twist. Avoid clichés like "go green" or "save the planet."
 
@@ -357,7 +357,7 @@
 
 | Version | Prompt | What Changed | Why This Improved the Output |
 |---------|--------|--------------|-------------------------------|
-| V1 | "Explain neural networks to a 10-year-old." | N/A — initial attempt | N/A |
+| V1 | "Explain neural networks to a 10-year-old." | N/A - initial attempt | N/A |
 | V2 | Added role ("friendly elementary school teacher"), requested an analogy, banned jargon, asked for a short and fun response | Added role assignment, analogy request, and tone constraint | The role forced a child-appropriate register; the analogy requirement pushed the model away from abstract definitions |
 | V3 | Specified a concrete analogy (dog training), added step-by-step structure, requested exciting tone, and short sentences | Chose a specific relatable analogy; added structural guidance and emotional tone | A fixed analogy gave the model a clear creative direction; step-by-step instruction produced a more pedagogically useful output |
 
@@ -365,7 +365,7 @@
 
 | Version | Prompt | What Changed | Why This Improved the Output |
 |---------|--------|--------------|-------------------------------|
-| V1 | "Write an email declining a job offer." | N/A — initial attempt | N/A |
+| V1 | "Write an email declining a job offer." | N/A - initial attempt | N/A |
 | V2 | Added role ("professional career coach"), specified goal of staying on good terms, set tone to warm, grateful, and professional | Added role, purpose, and tone | The role provided expertise context; purpose clarified the emotional goal; tone prevented the cold, minimal output of V1 |
 | V3 | Added company type (tech startup), specific reason for declining, explicit mention of admiring company culture, 3-paragraph structure, and "genuine" qualifier | Specified scenario details, structure, and authenticity requirement | Specificity enabled realistic personalization; structure prevented rambling; "genuine" tone instruction removed formulaic language |
 
@@ -373,7 +373,7 @@
 
 | Version | Prompt | What Changed | Why This Improved the Output |
 |---------|--------|--------------|-------------------------------|
-| V1 | "Write a marketing tagline for an eco-friendly water bottle." | N/A — initial attempt | N/A |
+| V1 | "Write a marketing tagline for an eco-friendly water bottle." | N/A - initial attempt | N/A |
 | V2 | Added role ("professional copywriter"), asked for 5 options, defined target audience (18–30), requested modern and non-preachy tone | Added role, quantity, audience, tone constraint | Multiple options gave variety to choose from; audience definition tuned the voice; "not preachy" filtered out generic eco-messaging |
 | V3 | Named the brand ("Ripple"), specified Gen Z/Millennial audience, requested double meanings, set 8-word limit, explicitly banned clichés | Added brand name, wordplay requirement, word limit, cliché blacklist | Brand name enabled creative wordplay; word limit forced concision; cliché ban pushed toward truly original language |
 
@@ -402,42 +402,72 @@ Adding a specific role helped the LLM adopt the appropriate tone, expertise, and
 
 ---
 
-#### Low Temperature (Simulated: added "Be precise and factual. Use clear, consistent language.")
+#### Low Temperature (Added "Be precise and factual. Use clear, consistent language.")
+
+**Temperature:**
+low (0 to 0.4)
 
 **Full Prompt:**
 > Write a 3-sentence product description for a mid-range laptop designed for college students. Be precise and factual. Use clear, consistent language.
 
 **Output:**
 
-> The ProBook X15 is a mid-range laptop designed to meet the academic demands of college students. It features a 15.6-inch Full HD display, an Intel Core i5 processor, 16GB of RAM, and a 512GB SSD for fast, reliable performance. With up to 10 hours of battery life and a lightweight 1.8 kg chassis, it provides portability and endurance for long campus days.
-
-**Observations:** Specific, structured, fact-driven. No flair or personality — reads like a spec sheet.
+> Here's a clean, factual product description:
 
 ---
 
-#### Medium Temperature (No modifier — baseline prompt)
+>The **[Laptop Name]** is a lightweight, versatile laptop built for the demands of college life, featuring a [X]-hour battery life, [RAM]GB of RAM, and a fast [processor] processor to handle everything from lecture notes to research-heavy projects. Its [screen size]-inch [resolution] display delivers sharp, comfortable viewing whether you're in a dimly lit dorm room or an outdoor study spot, and the durable [material] chassis is designed to travel daily without the wear. At [price], it strikes a practical balance between performance and affordability — everything a student needs, nothing they don't.
+
+---
+
+>Just fill in the bracketed specs and it's ready to use. Want me to write a fully fleshed-out version for a specific laptop model?
+
+---
+
+#### Medium Temperature (No modifier - baseline prompt)
+
+**Temperature:**
+medium (0.5 to 0.7)
 
 **Full Prompt:**
 > Write a 3-sentence product description for a mid-range laptop designed for college students.
 
 **Output:**
 
-> Whether you're powering through essays at midnight or pulling up lecture slides between classes, the ProBook X15 keeps up with your academic hustle. Packed with an Intel Core i5, 16GB RAM, and a vibrant Full HD display, it delivers smooth multitasking without draining your wallet — or your battery. Smart, sleek, and student-ready, it's the reliable sidekick your GPA deserves.
-
-**Observations:** Balanced — has personality and rhythm but remains coherent and informative. Relatable student scenarios make it engaging.
+> The **AcademPro 15** is a sleek, portable laptop built for the full college experience — powerful enough to run demanding coursework and creative projects, yet light enough to carry across campus all day. Its 15-inch Full HD display, 16GB of RAM, and 512GB SSD deliver smooth, responsive performance whether you're writing papers, editing videos, or jumping between a dozen browser tabs. With an all-day 12-hour battery and a durable, backpack-ready design, it's the reliable study partner that keeps up with your schedule — from 8am lectures to midnight deadlines.
 
 ---
 
-#### High Temperature (Simulated: added "Be creative and explore diverse, imaginative ideas.")
+#### High Temperature (Added "Be creative and explore diverse, imaginative ideas.")
+
+**Temperature:**
+high (0.8 to 1.0)
 
 **Full Prompt:**
 > Write a 3-sentence product description for a mid-range laptop designed for college students. Be creative and explore diverse, imaginative ideas.
 
 **Output:**
 
-> Forget the all-nighters — the ProBook X15 is like having a genius roommate who never needs sleep, wired on espresso and armed with an i5 processor that chews through tabs like they're free samples. It's not just a laptop; it's the academic companion that survived three finals seasons, two coffee spills (hypothetically), and one philosophy-major existential crisis. Lightweight enough to toss in your vintage tote bag, powerful enough to make your professor's desktop weep — this is college, upgraded.
+> Here are three takes, each with a different creative angle:
 
-**Observations:** Highly creative, humorous, and distinctive. Risks feeling unprofessional; harder to extract concrete specs. Best for entertainment-focused or brand-voice-heavy marketing.
+---
+
+>**🎭 Personality-led**
+>The **AcademPro 15** isn't just a laptop — it's the roommate who never sleeps, never complains, and always has your back at 2am when the assignment is due in six hours. Packed with 16GB of RAM, a 512GB SSD, and a battery that outlasts your longest lecture streak, it handles the chaos of college life without breaking a sweat. Slim enough to slide into any backpack, tough enough to survive the semester — this is the one tool that works as hard as you do.
+
+---
+
+>**🌍 Cinematic & aspirational**
+>Somewhere between a coffee-stained library table and a late-night epiphany, great ideas are born — and the **AcademPro 15** is built to catch every one of them. With a vivid 15-inch Full HD display, whisper-quiet performance, and 12 hours of battery life, it turns any corner of campus into a creative studio. Lightweight, durable, and quietly powerful, it's less a piece of tech and more a canvas for everything you're about to become.
+
+---
+
+>**😄 Witty & self-aware**
+>The **AcademPro 15** won't write your thesis for you — but with 16GB of RAM, a lightning-fast SSD, and a battery that lasts longer than your motivation, it'll make sure technology is never your excuse. It's thin enough to forget it's in your bag, tough enough to survive the bottom of it, and smart enough to keep up when you finally decide to start that project due tomorrow. College is unpredictable; your laptop shouldn't be.
+
+---
+
+>Want me to blend elements from these or tailor one to a specific brand voice?
 
 ---
 
@@ -445,25 +475,34 @@ Adding a specific role helped the LLM adopt the appropriate tone, expertise, and
 
 | Aspect | Low Temperature | Medium Temperature | High Temperature |
 |--------|----------------|-------------------|-----------------|
-| Tone | Factual, neutral | Friendly, balanced | Humorous, bold |
+| Tone | Factual, neutral | Friendly, balanced | Humorous, bold, expressive |
 | Creativity | Low | Moderate | High |
-| Consistency | Very consistent | Consistent | Unpredictable |
-| Information density | High (specs-focused) | Medium | Low (personality-focused) |
+| Consistency | Very consistent and predictable | Consistent with some creativity | Less predictable and more varied |
+| Information density | High (focuses on specifications and facts) | Medium (mix of features and marketing) | Lower (focuses more on storytelling and personality) |
+| Output Style | Clear, precise and technical | Balanced, practical and engaging | Creative, imaginative, and entertaining |
 | Risk of errors | Very low | Low | Moderate |
-| Best for | Tech spec pages | E-commerce listings | Social media / brand campaigns |
+|Main Focus | Facts and product features | Features with appealing marketing language | Emotions, storytelling and brand personality |
+| Best for | Technical documentation, specification sheets | E-commerce websites and product listings | Social media promotions and brand campaigns |
 
 ---
+
+#### Observation
+
+- At the low temperature, the output was very straightforward and focused mainly on facts and features of the laptop. The language was simple and consistent, with very little creativity.
+- At the medium temperature, the output was balanced. It included useful specifications while also making the laptop sound attractive and suitable for college students. This version felt the most natural and practical.
+- At the high temperature, the output became much more creative. It used imaginative descriptions, humor, and different writing styles. While it was engaging and unique, it was less focused on factual information compared to the low-temperature output.
+
 
 ### 2.2 Analysis & Recommendations
 
 **When to use low temperature:**
-Low temperature is ideal when accuracy and consistency are paramount. For example, generating medical documentation or clinical summaries where incorrect wording could be dangerous, and for legal document drafting where precise, repeatable language is required every time.
+Low temperature is best when accuracy, consistency, and factual information are important. For example, it can be used for writing technical documentation,generating product specification sheets, where the information must be precise and reliable. It can also be used for generating medical documentation or clinical summaries where incorrect wording could be dangerous, and for legal document drafting where precise, repeatable language is required every time.
 
 **When to use high temperature:**
-High temperature excels in purely creative contexts. For example, brainstorming session prompts where you want diverse, unexpected ideas for a new product name, and writing satirical or comedic content where originality and surprise are more valuable than precision.
+High temperature is useful when creativity and originality are required. For example, it can be used for creating marketing campaigns and writing social media content, where engaging and unique ideas are more important than strict accuracy. It is used for brainstorming session prompts where we want diverse, unexpected ideas for a new product name, and writing satirical or comedic content where authenticity and surprise are more valuable than precision.
 
 **Which temperature worked best for this task:**
-For a product description targeting college students, the medium temperature produced the most useful output. It struck a balance between informativeness (the reader gets key specs and benefits) and personality (the language is relatable and engaging). The low-temperature output was too dry for marketing purposes, while the high-temperature output — though entertaining — sacrificed clarity and could confuse a buyer looking for concrete product details.
+For this task, the medium temperature worked best. It provided a good balance between factual information(the reader gets key specs and benefits), personality (the language is relatable and engaging) and creativity, making the product description both informative and appealing. The output included useful laptop features where it used attractive language that would interest college students. The low-temperature output was too dry for marketing purposes, while the high-temperature output, though entertaining, sacrificed clarity and could confuse a buyer looking for concrete product details.
 
 ---
 
