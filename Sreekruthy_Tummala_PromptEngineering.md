@@ -184,9 +184,9 @@
 
 >Here's your email — crafted to leave a lasting positive impression. A few coaching tips before you hit send:
 
-- **Don't over-explain.** You don't owe them a reason, and giving too many details can open the door to negotiation if you've already made up your mind.
-- **Send it promptly.** The sooner you notify them, the sooner they can move to their next candidate — they'll appreciate the respect.
-- **Connect on LinkedIn** right after sending, so the relationship stays warm beyond just this email.
+>- **Don't over-explain.** You don't owe them a reason, and giving too many details can open the door to negotiation if you've already made up your mind.
+>- **Send it promptly.** The sooner you notify them, the sooner they can move to their next candidate — they'll appreciate the respect.
+>- **Connect on LinkedIn** right after sending, so the relationship stays warm beyond just this email.
 
 ---
 
@@ -212,8 +212,8 @@
 
 > A clean, three-paragraph structure that hits every note — gratitude, honesty, and a genuine door left open. Before sending, personalize the bracketed parts:
 
-- Replace **[innovation / product / mission]** with something *specific* — a product you love, a value they publicly champion, or something that came up in your interviews. That detail is what makes it feel real rather than templated.
-- Drop in your **LinkedIn URL** — it signals you genuinely want to stay connected, not just say so.
+>- Replace **[innovation / product / mission]** with something *specific* — a product you love, a value they publicly champion, or something that came up in your interviews. That detail is what makes it feel real rather than templated.
+>- Drop in your **LinkedIn URL** — it signals you genuinely want to stay connected, not just say so.
 
 ---
 
@@ -231,22 +231,22 @@
 
 > Here are a few taglines depending on the angle you want:
 
-**Emotion-led**
+>**Emotion-led**
 > *"Drink well. Do good. Leave nothing behind."*
 
-**Bold & punchy**
+>**Bold & punchy**
 > *"Hydrate the planet. One sip at a time."*
 
-**Minimalist**
+>**Minimalist**
 > *"Less plastic. More planet."*
 
-**Aspirational**
+>**Aspirational**
 > *"Refill your bottle. Refuel your purpose."*
 
-**Witty**
+>**Witty**
 > *"The last bottle you'll ever need. (The ocean agrees.)"*
 
-Want me to tailor these for a specific audience, brand voice, or product name?
+>Want me to tailor these for a specific audience, brand voice, or product name?
 ---
 
 #### V2 — Refined Prompt
@@ -255,44 +255,44 @@ Want me to tailor these for a specific audience, brand voice, or product name?
 
 ---
 
-**1. Identity-driven**
+>**1. Identity-driven**
 > *"Carry your values. Carry your water."*
 
-Speaks to who they *are*, not what they *should* do.
+>Speaks to who they *are*, not what they *should* do.
 
 ---
 
-**2. Witty & self-aware**
+>**2. Witty & self-aware**
 > *"Single-use is so last decade."*
 
-A light cultural nudge — feels like an inside joke, not a lecture.
+>A light cultural nudge — feels like an inside joke, not a lecture.
 
 ---
 
 **3. Bold & minimal**
 > *"Fill it. Keep it. Mean it."*
 
-Short, punchy, and action-oriented. Feels like a manifesto.
+>Short, punchy, and action-oriented. Feels like a manifesto.
 
 ---
 
-**4. Aspirational with edge**
+>**4. Aspirational with edge**
 > *"Hydration with a point of view."*
 
-Elevates the bottle from utility to statement piece — perfect for a brand-forward audience.
+>Elevates the bottle from utility to statement piece — perfect for a brand-forward audience.
 
 ---
 
-**5. Playful & shareable**
+>**5. Playful & shareable**
 > *"Your planet called. It said stay hydrated."*
 
-Warm humor that's social-media-ready and totally un-preachy.
+>Warm humor that's social-media-ready and totally un-preachy.
 
 ---
 
-**My top pick for a launch campaign:** *"Single-use is so last decade."* — It's confident, culturally fluent, and tells the brand story without saying a word about sustainability directly. That restraint is exactly what this audience responds to.
+>**My top pick for a launch campaign:** *"Single-use is so last decade."* — It's confident, culturally fluent, and tells the brand story without saying a word about sustainability directly. That restraint is exactly what this audience responds to.
 
-Want these adapted for a specific brand name, color palette, or campaign format (social, packaging, ads)?
+>Want these adapted for a specific brand name, color palette, or campaign format (social, packaging, ads)?
 
 ---
 
@@ -302,44 +302,44 @@ Want these adapted for a specific brand name, color palette, or campaign format 
 
 ---
 
-**1.**
+>**1.**
 > *"Every sip starts something."*
 
-**The twist:** A ripple starts with a single drop — and so does change. Action without preaching.
+>**The twist:** A ripple starts with a single drop — and so does change. Action without preaching.
 
 ---
 
-**2.**
+>**2.**
 > *"Make waves. Leave no trace."*
 
-**The twist:** "Make waves" = be bold and disruptive. "Leave no trace" = zero environmental footprint. Contradiction that resolves perfectly.
+>**The twist:** "Make waves" = be bold and disruptive. "Leave no trace" = zero environmental footprint. Contradiction that resolves perfectly.
 
 ---
 
-**3.**
+>**3.**
 > *"Refill. Repeat. Ripple."*
 
-**The twist:** A daily habit reframed as a movement. The brand name becomes the verb — the effect you create.
+>**The twist:** A daily habit reframed as a movement. The brand name becomes the verb — the effect you create.
 
 ---
 
-**4.**
+>**4.**
 > *"Good taste. No aftertaste."*
 
-**The twist:** Clean water that tastes great *and* a brand that leaves no guilt, no waste, no mess behind. Works on every level.
+>**The twist:** Clean water that tastes great *and* a brand that leaves no guilt, no waste, no mess behind. Works on every level.
 
 ---
 
-**5.**
+>**5.**
 > *"The bottle that talks back."*
 
-**The twist:** Ripples = water responding to you. But also — a product with a voice, a personality, a point of view. For an audience that wants their stuff to *mean* something.
+>**The twist:** Ripples = water responding to you. But also — a product with a voice, a personality, a point of view. For an audience that wants their stuff to *mean* something.
 
 ---
 
-**🏆 Hero tagline recommendation:** *"Good taste. No aftertaste."*
+>**🏆 Hero tagline recommendation:** *"Good taste. No aftertaste."*
 
-It's the sharpest double meaning of the five — instantly understood, impossible to forget, and it lets the audience feel clever for getting it. Perfect for packaging, where you have one second to land.
+>It's the sharpest double meaning of the five — instantly understood, impossible to forget, and it lets the audience feel clever for getting it. Perfect for packaging, where you have one second to land.
 ---
 
 ### 1.2 Iteration Documentation
